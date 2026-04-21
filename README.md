@@ -10,19 +10,19 @@ These images show what the app looks like in the browser so you can get a feel f
 
 The landing page introduces **NorthTrade Mobile** with a dark hero, primary navigation (Home, Shop, About, Contact), and secondary links (Browse catalog, Support). The hero headline and supporting copy describe curated phones from major brands, with calls to action such as **Shop the catalog** and **Why NorthTrade**. A compact row highlights dispatch, secure checkout, and support. The **Featured** card can show weekly picks; when the database is not connected, it explains that content is static until live products load. Below the hero, a light section presents three trust pillars (delivery, warranty-friendly listings, responsive support), then a **Shop by brand family** grid (iPhone, Samsung Galaxy, Google Pixel, and other brands) with a link into the catalog.
 
-![NorthTrade Mobile homepage — hero, features, and category cards](docs/screenshots/homepage.png)
+![NorthTrade Mobile homepage — hero, features, and category cards](docs/screenshots/homepage.jpg)
 
 ### Catalog admin (shop back office)
 
 The shop area includes tools to **find products** (category filter and keyword search), an empty **Product grid** that fills when items exist or match the search, a form to **add a product** (category, name, price in €, optional photo upload), and a **Categories** panel to add new category labels—removal is allowed only when no products use that category.
 
-![Product management — search, grid, add product, and categories](docs/screenshots/admin-catalog.png)
+![Product management — search, grid, add product, and categories](docs/screenshots/admin-catalog.jpg)
 
 ### Footer and closing CTA
 
 Near the bottom of the site, a dark **Ready to upgrade?** band invites visitors to use the catalog and mentions expanding the store with their own listings, with a **Start shopping** button. The footer repeats the brand, short positioning text, and columns for **Shop**, **Company**, and a **Stay in the loop** newsletter field. The bottom bar shows copyright and contact details.
 
-![Footer — upgrade CTA, columns, and newsletter](docs/screenshots/footer-cta.png)
+![Footer — upgrade CTA, columns, and newsletter](docs/screenshots/footer-cta.jpg)
 
 ## Run locally
 

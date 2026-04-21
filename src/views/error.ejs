@@ -1,0 +1,10 @@
+<%- include('partials/layout-head', { title: title || 'Something went wrong', active: typeof active !== 'undefined' ? active : '' }) %>
+<%- include('partials/site-nav', { active: typeof active !== 'undefined' ? active : '' }) %>
+
+<main class="container py-5 flex-grow-1">
+  <h1 class="site-section-title h2 mb-3"><%= title || 'Something went wrong' %></h1>
+  <div class="alert alert-danger border-0 shadow-sm"><%= message || 'Please try again in a moment.' %></div>
+  <a href="/" class="btn btn-site-primary mt-2">Back to home</a>
+</main>
+
+<%- include('partials/site-footer') %>

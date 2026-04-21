@@ -1,0 +1,50 @@
+<footer class="site-footer mt-auto">
+  <div class="container py-5">
+    <div class="row g-4 g-lg-5">
+      <div class="col-lg-4">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <span class="site-brand-mark site-brand-mark--sm" aria-hidden="true"></span>
+          <strong class="text-white"><%= typeof siteName !== 'undefined' ? siteName : 'NorthTrade Mobile' %></strong>
+        </div>
+        <p class="text-white-50 small mb-0">
+          Your destination for flagship phones, trusted brands, and straightforward support. Shop online or reach our team
+          for product questions.
+        </p>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h3 class="text-white text-uppercase small fw-semibold mb-3">Shop</h3>
+        <ul class="list-unstyled small mb-0">
+          <li class="mb-2"><a href="/shop">All products</a></li>
+          <li class="mb-2"><a href="/shop#browse">Browse &amp; filter</a></li>
+          <li class="mb-2"><a href="/contact">Order help</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h3 class="text-white text-uppercase small fw-semibold mb-3">Company</h3>
+        <ul class="list-unstyled small mb-0">
+          <li class="mb-2"><a href="/about">About us</a></li>
+          <li class="mb-2"><a href="/contact">Careers</a></li>
+          <li class="mb-2"><a href="/contact">Press</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h3 class="text-white text-uppercase small fw-semibold mb-3">Stay in the loop</h3>
+        <p class="text-white-50 small">Product drops and seasonal offers. Unsubscribe anytime.</p>
+        <form class="d-flex flex-column flex-sm-row gap-2" action="/contact" method="get">
+          <input type="email" class="form-control form-control-site" name="newsletter" placeholder="Email address" aria-label="Email for newsletter" />
+          <button type="submit" class="btn btn-site-primary">Sign up</button>
+        </form>
+      </div>
+    </div>
+    <hr class="border-secondary my-4 opacity-25" />
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 small text-white-50">
+      <span>© <%= new Date().getFullYear() %> <%= typeof siteName !== 'undefined' ? siteName : 'NorthTrade Mobile' %>. All rights reserved.</span>
+      <span>
+        <a class="link-light text-decoration-none me-3" href="mailto:sergejzapivalovs@gmail.com">sergejzapivalovs@gmail.com</a>
+        <a class="link-light text-decoration-none" href="/contact">Privacy</a>
+      </span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

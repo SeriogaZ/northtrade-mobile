@@ -1,0 +1,43 @@
+<%- include('../partials/layout-head', { title, active }) %>
+<%- include('../partials/site-nav', { active }) %>
+
+<main class="flex-grow-1">
+  <section class="site-page-hero py-5 border-bottom">
+    <div class="container col-xl-10">
+      <p class="site-eyebrow site-eyebrow--dark mb-2">Our story</p>
+      <h1 class="site-section-title display-6 mb-3">Built for people who care about what they carry.</h1>
+      <p class="lead text-secondary col-lg-9 mb-0">
+        <%= typeof siteName !== 'undefined' ? siteName : 'NorthTrade Mobile' %> started with a simple idea: buying a phone
+        online should feel as confident as walking into a store you trust. We focus on clear information, honest pricing,
+        and support that doesn’t disappear after checkout.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container col-xl-10">
+      <div class="row g-5">
+        <div class="col-lg-6">
+          <h2 class="h4 mb-3">What we stand for</h2>
+          <ul class="text-secondary">
+            <li class="mb-2"><strong class="text-body">Transparency.</strong> Real product imagery and specs you can verify.</li>
+            <li class="mb-2"><strong class="text-body">Choice.</strong> Flagship and value picks across major ecosystems.</li>
+            <li class="mb-2"><strong class="text-body">Long-term relationships.</strong> We’re here when you need a hand.</li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <div class="site-about-panel p-4 p-lg-5 rounded-4 border bg-white shadow-sm">
+            <h2 class="h5 mb-3">Operations &amp; quality</h2>
+            <p class="text-secondary small mb-0">
+              Our catalog is maintained with structured product data and careful media handling so teams can scale listings
+              without losing consistency. Whether you’re browsing as a customer or managing inventory behind the scenes,
+              the experience stays fast and dependable.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%- include('../partials/site-footer') %>

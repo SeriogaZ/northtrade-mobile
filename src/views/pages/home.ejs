@@ -1,0 +1,126 @@
+<%- include('../partials/layout-head', { title, active }) %>
+<%- include('../partials/site-nav', { active }) %>
+
+<main class="flex-grow-1">
+  <section class="site-hero">
+    <div class="container py-5 py-lg-6">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <p class="site-eyebrow mb-2">New season · flagship lineup</p>
+          <h1 class="site-hero-title mb-3">Phones you’ll want to hold onto.</h1>
+          <p class="site-lead text-white-50 mb-4 col-lg-11">
+            Shop curated devices from Apple, Samsung, Google, and more. Real photos, clear pricing, and tools to manage
+            your catalog when you’re ready to scale.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a class="btn btn-site-primary btn-lg px-4" href="/shop">Shop the catalog</a>
+            <a class="btn btn-outline-light btn-lg px-4" href="/about">Why NorthTrade</a>
+          </div>
+          <div class="d-flex flex-wrap gap-4 mt-5 pt-lg-2 site-trust-row">
+            <div>
+              <strong class="d-block text-white">2-day dispatch</strong>
+              <span class="small text-white-50">On in-stock models</span>
+            </div>
+            <div>
+              <strong class="d-block text-white">Secure checkout</strong>
+              <span class="small text-white-50">Encrypted sessions</span>
+            </div>
+            <div>
+              <strong class="d-block text-white">Expert support</strong>
+              <span class="small text-white-50">Real humans</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="site-hero-card p-4 p-lg-5 rounded-4">
+            <div class="d-flex justify-content-between align-items-start mb-4">
+              <div>
+                <span class="badge bg-dark bg-opacity-50 text-white-50 border border-secondary">Featured</span>
+                <h2 class="h4 text-white mt-3 mb-1">This week’s picks</h2>
+                <p class="small text-white-50 mb-0">Pulled live from our catalog.</p>
+              </div>
+            </div>
+            <div id="home-featured" class="row g-3">
+              <p class="small text-white-50 mb-0 col-12">Loading featured products…</p>
+            </div>
+            <a href="/shop" class="btn btn-light w-100 mt-4 fw-semibold">View full catalog</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg-body-secondary border-top border-bottom">
+    <div class="container">
+      <div class="row g-4 text-center text-lg-start">
+        <div class="col-md-4">
+          <div class="site-icon-tile mx-auto mx-lg-0 mb-3">📦</div>
+          <h2 class="h5">Nationwide delivery</h2>
+          <p class="text-secondary small mb-0">Tracked shipping and simple returns. We pack every device with care.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="site-icon-tile mx-auto mx-lg-0 mb-3">🛡️</div>
+          <h2 class="h5">Warranty-friendly</h2>
+          <p class="text-secondary small mb-0">Genuine listings and transparent condition notes on every product page.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="site-icon-tile mx-auto mx-lg-0 mb-3">💬</div>
+          <h2 class="h5">Support that answers</h2>
+          <p class="text-secondary small mb-0">Questions before you buy? Our team is a message away.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-end mb-4">
+        <div class="col-lg-8">
+          <p class="site-eyebrow site-eyebrow--dark mb-2">Categories</p>
+          <h2 class="site-section-title mb-0">Shop by brand family</h2>
+        </div>
+        <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+          <a href="/shop" class="btn btn-site-outline">Open catalog</a>
+        </div>
+      </div>
+      <div class="row g-3">
+        <% const cats = [
+          { name: 'iPhone', blurb: 'Latest iOS flagships' },
+          { name: 'Samsung Galaxy', blurb: 'Android power users' },
+          { name: 'Google Pixel', blurb: 'Pure Android, great cameras' },
+          { name: 'Everything else', blurb: 'Xiaomi, Nokia, Huawei & more' },
+        ]; %>
+        <% cats.forEach(function (c) { %>
+          <div class="col-sm-6 col-xl-3">
+            <a href="/shop" class="text-decoration-none text-reset">
+              <div class="site-category-card h-100 p-4 rounded-3 border bg-white shadow-sm">
+                <h3 class="h6 mb-2"><%= c.name %></h3>
+                <p class="small text-secondary mb-0"><%= c.blurb %></p>
+              </div>
+            </a>
+          </div>
+        <% }); %>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg-dark text-white">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-8">
+          <h2 class="h3 mb-2">Ready to upgrade?</h2>
+          <p class="text-white-50 mb-0 col-lg-10">
+            Compare models side by side in our catalog, filter by category, and add your own listings when you expand the
+            store.
+          </p>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+          <a class="btn btn-light btn-lg fw-semibold px-4" href="/shop">Start shopping</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="/js/home-featured.js" defer></script>
+<%- include('../partials/site-footer') %>

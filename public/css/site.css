@@ -1,0 +1,236 @@
+/* NorthTrade Mobile — retail site shell */
+
+.site-body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  background: #f3f4f6;
+  color: #111827;
+}
+
+.site-topbar {
+  background: #0f172a;
+  color: rgba(255, 255, 255, 0.75);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.site-topbar a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+}
+
+.site-topbar a:hover {
+  color: #fff;
+}
+
+.site-navbar {
+  background: rgba(15, 23, 42, 0.97);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.site-navbar .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.site-brand {
+  font-family: 'Outfit', 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+  color: #fff !important;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.site-brand-mark {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(135deg, #38bdf8, #6366f1 45%, #a855f7);
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.45);
+}
+
+.site-brand-mark--sm {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.site-navbar .nav-link {
+  color: rgba(255, 255, 255, 0.78) !important;
+  font-weight: 500;
+  border-radius: 999px;
+}
+
+.site-navbar .nav-link:hover,
+.site-navbar .nav-link:focus {
+  color: #fff !important;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.site-navbar .nav-link.active {
+  color: #fff !important;
+  background: rgba(99, 102, 241, 0.35);
+}
+
+.btn-site-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #6366f1;
+  --bs-btn-border-color: #6366f1;
+  --bs-btn-hover-bg: #4f46e5;
+  --bs-btn-hover-border-color: #4f46e5;
+  --bs-btn-focus-shadow-rgb: 99, 102, 241;
+  --bs-btn-active-bg: #4338ca;
+  --bs-btn-active-border-color: #4338ca;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.btn-site-outline {
+  --bs-btn-color: #fff;
+  --bs-btn-border-color: rgba(255, 255, 255, 0.35);
+  --bs-btn-hover-bg: rgba(255, 255, 255, 0.08);
+  --bs-btn-hover-border-color: #fff;
+  --bs-btn-hover-color: #fff;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.site-hero {
+  background: radial-gradient(ellipse 80% 60% at 50% -30%, rgba(99, 102, 241, 0.35), transparent),
+    linear-gradient(180deg, #0f172a 0%, #111827 55%, #0b1224 100%);
+  color: #fff;
+}
+
+.site-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.site-eyebrow--dark {
+  color: #6366f1;
+}
+
+.site-hero-title {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.site-lead {
+  font-size: 1.1rem;
+  line-height: 1.65;
+}
+
+.site-hero-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+}
+
+.site-trust-row strong {
+  font-size: 0.95rem;
+}
+
+.site-icon-tile {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.site-section-title {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.site-category-card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.site-category-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.1) !important;
+}
+
+.site-page-hero {
+  background: linear-gradient(180deg, #fff 0%, #f3f4f6 100%);
+}
+
+.site-about-panel {
+  border-color: #e5e7eb !important;
+}
+
+.site-footer {
+  background: #0b0f1a;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.site-footer a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: #fff;
+}
+
+.form-control-site {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border-radius: 999px;
+  padding-left: 1rem;
+}
+
+.form-control-site::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.form-control-site:focus {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #818cf8;
+  color: #fff;
+  box-shadow: 0 0 0 0.2rem rgba(129, 140, 248, 0.25);
+}
+
+/* Shop page: blend with site chrome */
+.shop-surface {
+  background: linear-gradient(180deg, #eef0f5 0%, #f3f4f6 40%);
+}
+
+.shop-card {
+  border-radius: 1rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+.featured-thumb {
+  border-radius: 0.75rem;
+  object-fit: cover;
+  width: 100%;
+  aspect-ratio: 1;
+  background: #e5e7eb;
+}
+
+.py-lg-6 {
+  padding-top: 4.5rem !important;
+  padding-bottom: 4.5rem !important;
+}
+
+@media (min-width: 992px) {
+  .py-lg-6 {
+    padding-top: 5.5rem !important;
+    padding-bottom: 5.5rem !important;
+  }
+}

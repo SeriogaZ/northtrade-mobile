@@ -1,0 +1,27 @@
+.fieldset
+{
+    border:2px solid gainsboro ;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+    text-align: inherit;
+    text-decoration: none;
+    white-space:inherit;
+
+}
+
+.output {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+
+.dropdown-list{
+    display: block;
+    padding: 0.25rem 1rem;
+    clear: both;
+    color: #212529;
+    text-align: inherit;
+    text-decoration: none;
+    white-space:inherit;
+    border: 2;
+}

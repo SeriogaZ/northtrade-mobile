@@ -1,5 +1,3 @@
-<img width="1686" height="1018" alt="image" src="https://github.com/user-attachments/assets/fc9378e6-0987-473c-9a59-d97f9f700cdb" /># NorthTrade Mobile — retail web app (Node.js)
-
 Full-stack storefront-style site: **marketing pages** (Express + EJS), a **shop / catalog** area powered by a **REST API** (`/api/v1`) and a **vanilla JS** client (`fetch`, `FormData`). Built with **Node.js**, **Express**, and **MySQL**.
 
 ## Preview (screenshots)
@@ -17,13 +15,15 @@ The landing page introduces **NorthTrade Mobile** with a dark hero, primary navi
 
 The shop area includes tools to **find products** (category filter and keyword search), an empty **Product grid** that fills when items exist or match the search, a form to **add a product** (category, name, price in €, optional photo upload), and a **Categories** panel to add new category labels—removal is allowed only when no products use that category.
 
-![Product management — search, grid, add product, and categories](docs/screenshots/admin-catalog.jpg)
+<img width="1410" height="988" alt="image" src="https://github.com/user-attachments/assets/0d451490-463e-4a68-8eb6-ffd04b2fc66e" />
+
 
 ### Footer and closing CTA
 
 Near the bottom of the site, a dark **Ready to upgrade?** band invites visitors to use the catalog and mentions expanding the store with their own listings, with a **Start shopping** button. The footer repeats the brand, short positioning text, and columns for **Shop**, **Company**, and a **Stay in the loop** newsletter field. The bottom bar shows copyright and contact details.
 
-![Footer — upgrade CTA, columns, and newsletter](docs/screenshots/footer-cta.jpg)
+<img width="1615" height="501" alt="image" src="https://github.com/user-attachments/assets/c8e08139-26d8-43f0-bf25-064080d8e8fe" />
+
 
 ## Run locally
 

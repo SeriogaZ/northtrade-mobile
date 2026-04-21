@@ -1,4 +1,4 @@
-# NorthTrade Mobile — retail web app (Node.js)
+<img width="1686" height="1018" alt="image" src="https://github.com/user-attachments/assets/fc9378e6-0987-473c-9a59-d97f9f700cdb" /># NorthTrade Mobile — retail web app (Node.js)
 
 Full-stack storefront-style site: **marketing pages** (Express + EJS), a **shop / catalog** area powered by a **REST API** (`/api/v1`) and a **vanilla JS** client (`fetch`, `FormData`). Built with **Node.js**, **Express**, and **MySQL**.
 
@@ -10,7 +10,8 @@ These images show what the app looks like in the browser so you can get a feel f
 
 The landing page introduces **NorthTrade Mobile** with a dark hero, primary navigation (Home, Shop, About, Contact), and secondary links (Browse catalog, Support). The hero headline and supporting copy describe curated phones from major brands, with calls to action such as **Shop the catalog** and **Why NorthTrade**. A compact row highlights dispatch, secure checkout, and support. The **Featured** card can show weekly picks; when the database is not connected, it explains that content is static until live products load. Below the hero, a light section presents three trust pillars (delivery, warranty-friendly listings, responsive support), then a **Shop by brand family** grid (iPhone, Samsung Galaxy, Google Pixel, and other brands) with a link into the catalog.
 
-![NorthTrade Mobile homepage — hero, features, and category cards](docs/screenshots/homepage.jpg)
+<img width="1686" height="1018" alt="image" src="https://github.com/user-attachments/assets/43febf4d-f015-47fe-89f6-f0b255eca4d9" />
+
 
 ### Catalog admin (shop back office)
 
